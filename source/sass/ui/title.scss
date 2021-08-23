@@ -1,0 +1,22 @@
+.title {
+  margin: 0;
+  padding: 0 0 0 15.2vw;
+  font-family: $Nirmala;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.035em;
+  text-align: left;
+}
+
+@include media-breakpoint-down(xxl) {
+  .title {
+    padding: 0 0 0 4vw;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .title {
+    padding: 0;
+    font-size: 2rem;
+  }
+}

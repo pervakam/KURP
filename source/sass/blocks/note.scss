@@ -1,0 +1,61 @@
+.note {
+  box-sizing: border-box;
+  padding: 5.5rem 0 1.8rem 7.3vw;
+  text-align: left;
+  color: $gray;
+
+  blockquote {
+    margin: 0;
+    font-family: $Nirmala;
+    font-size: 1.875rem;
+    line-height: 134%;
+    letter-spacing: 0.008em;
+  }
+
+  cite {
+    font-style: normal;
+    margin: 2.5rem 0 0;
+    font-family: $Nirmala;
+    font-size: 1.875rem;
+    line-height: 133%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 88px;
+      height: 2px;
+      background-color: $gray;
+      margin: 0 0.5rem 0 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .note {
+    padding: 3rem 2rem;
+    margin: 0;
+
+    blockquote {
+      font-size: 1.5rem;
+    }
+
+    cite {
+      margin: 1.5rem 0 0;
+      font-size: 1rem;
+      line-height: 133%;
+
+      &::before {
+        width: 3rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .note {
+    padding: 3rem 1rem;
+  }
+}

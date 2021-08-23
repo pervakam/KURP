@@ -1,0 +1,58 @@
+.page-header {
+  padding: 0;
+
+  &__wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 1.4rem 5.2vw 1.7rem 6.6vw;
+  }
+
+  &__collapse {
+    max-width: 50vw;
+  }
+
+  &__nav {
+    font-family: $Nirmala;
+    font-weight: normal;
+    letter-spacing: 0.15em;
+    font-size: 0.875rem;
+    width: 100%;
+    justify-content: space-between;
+    text-transform: uppercase;
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .page-header {
+    &__wrapper {
+      padding: 1.4rem 2rem 1.7rem;
+    }
+
+    &__collapse {
+      max-width: 60vw;
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .page-header {
+    &__wrapper {
+      padding: 1.4rem 2rem 1.7rem;
+    }
+
+    &__collapse {
+      margin: 1rem 0 0;
+      max-width: 100%;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .page-header {
+    &__wrapper {
+      padding: 1.4rem 1rem 1.7rem;
+    }
+  }
+}
+

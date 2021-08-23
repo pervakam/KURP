@@ -1,0 +1,17 @@
+.about-button {
+  display: block;
+  margin: 5.1rem 0 0;
+  font-family: $Nirmala;
+  font-size: 1.187rem;
+  line-height: 126%;
+  text-transform: uppercase;
+  letter-spacing: 0.035em;
+  color: $black;
+}
+
+@include media-breakpoint-down(xl) {
+  .about-button {
+    margin: 3rem 0 0;
+    text-align: center;
+  }
+}

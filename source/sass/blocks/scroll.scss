@@ -1,0 +1,30 @@
+.scroll {
+  width: 2.63rem;
+  height: 1.56rem;
+  margin: 0 auto 1.75rem;
+  animation: bounce 5s infinite;
+
+  @keyframes bounce {
+    0%,
+    100%,
+    30%,
+    50%,
+    70% {
+      transform: translateY(0);
+    }
+
+    40% {
+      transform: translateY(-0.9375rem);
+    }
+
+    60% {
+      transform: translateY(-0.4375rem);
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .scroll {
+    display: none;
+  }
+}
