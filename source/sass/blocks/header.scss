@@ -1,6 +1,11 @@
 .page-header {
   padding: 0;
 
+  &__logo {
+    width: 11rem;
+    height: 1.56rem;
+  }
+
   &__wrapper {
     width: 100%;
     box-sizing: border-box;
@@ -13,13 +18,40 @@
   }
 
   &__nav {
-    font-family: $Nirmala;
+    font-family: $Vafle;
     font-weight: normal;
     letter-spacing: 0.15em;
     font-size: 0.875rem;
     width: 100%;
     justify-content: space-between;
     text-transform: uppercase;
+  }
+
+  &__nav-item {
+    &--lang {
+      min-width: fit-content;
+
+      a {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__nav-link {
+    color: $black-text !important;
+
+    &--cz {
+      padding-right: 0 !important;
+    }
+
+    &--pl {
+      padding-left: 0 !important;
+      text-decoration: underline;
+    }
+  }
+
+  &__nav-link-active {
+    color: $gray !important;
   }
 }
 

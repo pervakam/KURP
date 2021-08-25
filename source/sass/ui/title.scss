@@ -1,11 +1,12 @@
 .title {
   margin: 0;
   padding: 0 0 0 15.2vw;
-  font-family: $Nirmala;
+  font-family: $Vafle;
   font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 0.035em;
   text-align: left;
+  color: $gray;
 }
 
 @include media-breakpoint-down(xxl) {

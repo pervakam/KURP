@@ -31,6 +31,18 @@
     }
   }
 
+  &__list-next-img,
+  &__list-prev-img {
+    width: 5.3rem;
+    height: 5.3rem;
+    opacity: 0.785;
+    fill: $yellow;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   &__list-next,
   &__list-prev {
     position: absolute;
@@ -73,9 +85,8 @@
       }
     }
 
-    &__list-next,
     &__list-prev {
-      display: none;
+      right: -1rem;
     }
   }
 }

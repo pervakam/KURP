@@ -14,43 +14,20 @@
     align-items: center;
     padding: 0 10% 0 0;
 
-    &::before {
-      margin: 0 6.8% 0 0;
-      display: block;
-      content: "";
-      min-width: 122px;
-      height: 122px;
-      background-repeat: no-repeat;
-    }
-
     p {
       margin: 0;
-      font-family: $Nirmala;
+      font-family: $Vafle;
       font-size: 1.5rem;
       line-height: 133%;
       width: 60%;
     }
+  }
 
-    &--cargo {
-      p {
-        word-wrap: break-word;
-      }
-      &::before {
-        background-image: url("../img/cargo-icon.svg");
-      }
-    }
-
-    &--glass {
-      &::before {
-        background-image: url("../img/glass-icon.svg");
-      }
-    }
-
-    &--manipulation {
-      &::before {
-        background-image: url("../img/manipulation-icon.svg");
-      }
-    }
+  &__item-img {
+    min-width: 7.625rem;
+    max-width: 7.625rem;
+    height: 7.625rem;
+    margin: 0 10% 0 0;
   }
 }
 

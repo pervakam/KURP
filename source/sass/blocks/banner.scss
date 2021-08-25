@@ -2,26 +2,24 @@
   &__banner {
     box-sizing: border-box;
     width: 100%;
-    padding: 6rem 0 4.5rem 14.5vw;
+    padding: 6rem 0 5.2rem 14.5vw;
   }
 
   &__banner-wrapper {
     max-width: 87rem;
     width: 100%;
-    background-image: url("../img/home_banner@1x.png");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position-y: top;
-    background-position-x: right;
-    padding: 1.5rem 0 12rem;
+    display: flex;
+    justify-content: flex-start;
   }
 
   &__banner-about {
-    width: 46%;
+    min-width: 46%;
+    max-width: 46%;
     text-align: left;
+    padding: 1.5rem 0 0;
 
     h1 {
-      font-family: $Nirmala;
+      font-family: $Vafle;
       font-size: 4.375rem;
       letter-spacing: 0.05em;
       line-height: 108%;
@@ -35,13 +33,22 @@
       background-color: #ffde1a;
       padding: 1.125rem 5.125rem 1.25rem 5.25rem;
       color: $black-text;
-      font-family: $Nirmala;
+      font-family: $Vafle;
       font-size: 1.1875rem;
       letter-spacing: 0.05em;
       line-height: 126%;
       margin: 6.5rem 0 0;
       border-radius: unset;
     }
+  }
+
+  &__banner-img-wrapper {
+    margin: 0 0 0 -6%;
+  }
+
+  &__banner-img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -84,7 +91,7 @@
       text-align: left;
 
       h1 {
-        font-family: $Nirmala;
+        font-family: $Vafle;
         font-size: 2.5rem;
         line-height: 120%;
       }
@@ -94,6 +101,42 @@
         font-size: 1rem;
         margin: 3rem auto 0;
       }
+    }
+
+    &__banner-img {
+      width: 60%;
+      height: auto;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .page-main {
+    &__banner-wrapper {
+      flex-direction: column;
+    }
+
+    &__banner-about {
+      min-width: 100%;
+      max-width: 100%;
+    }
+
+    &__banner-img-wrapper {
+      margin: 1rem 0 0;
+    }
+
+    &__banner-img {
+      width: 40%;
+      height: auto;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .page-main {
+    &__banner-img {
+      width: 60%;
+      height: auto;
     }
   }
 }

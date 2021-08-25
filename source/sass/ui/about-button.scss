@@ -1,12 +1,18 @@
 .about-button {
   display: block;
   margin: 5.1rem 0 0;
-  font-family: $Nirmala;
+  font-family: $Vafle;
   font-size: 1.187rem;
   line-height: 126%;
   text-transform: uppercase;
   letter-spacing: 0.035em;
   color: $black;
+  width: fit-content;
+
+  &:hover {
+    color: $black;
+    text-decoration: none;
+  }
 }
 
 @include media-breakpoint-down(xl) {

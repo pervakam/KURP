@@ -3,13 +3,15 @@ $white:                   #ffffff;
 $black:                   #000000;
 $black-text:              #292929;
 $gray:                    #888888;
+$light-gray:              #e2e2e2;
 $background-gray:         #f5f5f5;
 $yellow:                  #ffde1a;
+$yellow-dark:             darken($yellow, 10%);
 
 // fonts
-$Vafle:                 "Vafle", "Arial", sans-serif;
+
 $Inconsolata:           "Inconsolata", "Arial", sans-serif;
-$Nirmala:               "Nirmala", "Arial", sans-serif;
+$Vafle:                 "Vafle", "Arial", sans-serif;
 
 // breakpoints
 $mobile-min-width:        375px;

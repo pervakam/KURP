@@ -27,6 +27,8 @@ if (referenceList) {
 
         slidesPerView: 'auto',
 
+        loop: true,
+
         wrapperClass: 'reference__list',
 
         slideClass: 'reference__item',
@@ -41,6 +43,8 @@ if (referenceList) {
 if (reviewsList) {
     const referenceSwiper = new Swiper('.reviews__swiper-container', {
         slidesPerView: 'auto',
+
+        loop: true,
 
         wrapperClass: 'reviews__list',
 

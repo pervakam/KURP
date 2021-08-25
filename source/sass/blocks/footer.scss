@@ -20,12 +20,15 @@
     text-align: left;
     padding: 0;
 
-    h5 {
-      margin: 0 0 1.5rem;
+    strong {
+      display: block;
+      width: fit-content;
+      font-weight: normal;
+      margin: 0 0 2rem;
       text-transform: uppercase;
-      font-family: $Nirmala;
+      font-family: $Vafle;
       font-size: 1.125rem;
-      line-height: 134%;
+      line-height: 100%;
       letter-spacing: 0.045em;
     }
 
@@ -37,12 +40,41 @@
       font-size: 1.187rem;
       line-height: 126%;
       color: $black-text;
+      width: fit-content;
     }
 
     &--contacts {
       a:first-of-type {
         text-decoration: none;
       }
+    }
+
+    &--copyright {
+      strong {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &::after {
+          display: block;
+          content: "";
+          background-color: $yellow;
+          min-width: 0.875rem;
+          height: 0.875rem;
+          border-radius: 50%;
+          margin: 0 0 0 0.375rem;
+        }
+      }
+    }
+  }
+
+  &__network-logo {
+    width: 64px;
+    height: 64px;
+    fill: $black-text;
+
+    &:hover {
+      fill: $yellow;
     }
   }
 }
@@ -56,7 +88,7 @@
     &__item {
       margin: 0 0 1.5rem;
 
-      h5 {
+      strong {
         margin: 0 0 0.5rem;
         font-size: 1rem;
       }
@@ -76,7 +108,8 @@
     }
 
     &__item {
-      margin: 0;
+      margin: 0 0 1.5rem;
+      width: 50%;
     }
   }
 }

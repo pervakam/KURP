@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="122" height="122" viewBox="0 0 122 122">
-  <g id="group_44" transform="translate(-692 -1449)">
-    <circle cx="61" cy="61" r="61" transform="translate(692 1449)" fill="#ffde1a"/>
-    <g id="group_26" transform="translate(409.081 1104.62)">
-      <path d="M363.736,381.38h-39.5a5.339,5.339,0,0,0-5.252,5.422v30a5.338,5.338,0,0,0,5.252,5.422h39.5a5.339,5.339,0,0,0,5.252-5.422v-30A5.339,5.339,0,0,0,363.736,381.38Zm-2.626,32.679-34.372.074.129-24.594,5.043-.026h23.1l6.1-.048Z" fill="#fff"/>
-      <circle cx="3.43" cy="3.43" r="3.43" transform="translate(319.075 424.5)" fill="#fff"/>
-      <circle cx="3.43" cy="3.43" r="3.43" transform="translate(362.12 424.5)" fill="#fff"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="122" height="122"><g transform="translate(-692 -1449)"><circle cx="61" cy="61" r="61" transform="translate(692 1449)" fill="#ffde1a"/><g transform="translate(409.081 1104.62)" fill="#fff"><path d="M363.736 381.38h-39.5a5.339 5.339 0 00-5.252 5.422v30a5.338 5.338 0 005.252 5.422h39.5a5.339 5.339 0 005.252-5.422v-30a5.339 5.339 0 00-5.252-5.422zm-2.626 32.679l-34.372.074.129-24.594 5.043-.026h23.1l6.1-.048z"/><circle cx="3.43" cy="3.43" r="3.43" transform="translate(319.075 424.5)"/><circle cx="3.43" cy="3.43" r="3.43" transform="translate(362.12 424.5)"/></g></g></svg>
