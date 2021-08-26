@@ -1,0 +1,46 @@
+.link {
+  box-sizing: border-box;
+  padding: 6.4rem 0 9rem;
+  color: $white;
+  background-color: $black-text;
+
+  p {
+    font-family: $Vafle;
+    font-size: 3.75rem;
+    line-height: 116%;
+    margin: 0;
+  }
+
+  a {
+    width: 16.25rem;
+    background-color: $yellow;
+    padding: 1.25rem 4.75rem 1.25rem 4.75rem;
+    color: $black-text;
+    font-family: $Vafle;
+    font-size: 1.1875rem;
+    letter-spacing: 0.05em;
+    line-height: 126%;
+    margin: 3.6rem 0 0;
+    border-radius: unset;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .link {
+    padding: 3rem 0;
+
+    p {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .link {
+    padding: 3rem 1rem;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}

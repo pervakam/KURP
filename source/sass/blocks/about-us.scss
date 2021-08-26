@@ -1,0 +1,98 @@
+.about-us {
+  padding: 5rem 6.8vw 13rem;
+
+  &__wrapper {
+    box-sizing: border-box;
+    text-align: left;
+    max-width: 94rem;
+    width: 100%;
+    margin: 3.5rem 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    line-height: 146%;
+    width: 51%;
+
+    p {
+      margin: 0 0 1.6rem 0;
+      font-size: 1.187rem;
+    }
+  }
+
+  &__img {
+    margin: 7.7rem 0 0 0;
+    width: 45%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .about-us {
+    padding: 4rem 2rem 8rem;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .about-us {
+    padding: 4rem 2rem 8rem;
+
+    &__wrapper {
+      margin: 0;
+    }
+
+    &__description {
+      line-height: 146%;
+      width: 51%;
+
+      p {
+        margin: 0 0 1rem 0;
+        font-size: 1em;
+      }
+    }
+
+    &__img {
+      margin: 5.7rem 0 0 0;
+      width: 45%;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .about-us {
+    padding: 4rem 2rem 6rem;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__description {
+      width: 100%;
+
+      p {
+        margin: 0 0 1rem 0;
+        font-size: 1em;
+      }
+    }
+
+    &__img {
+      margin: 3rem 0 0 0;
+      width: 100%;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+
+}
+
+@include media-breakpoint-down(sm) {
+  .about-us {
+    padding: 3rem 1rem;
+  }
+}

@@ -3,6 +3,10 @@
     box-sizing: border-box;
     width: 100%;
     padding: 6rem 0 5.2rem 14.5vw;
+
+    &--about-us {
+      padding: 6rem 0 12rem 14.5vw;
+    }
   }
 
   &__banner-wrapper {
@@ -10,6 +14,11 @@
     width: 100%;
     display: flex;
     justify-content: flex-start;
+
+    &--about-us {
+      max-width: 90rem;
+      justify-content: space-between;
+    }
   }
 
   &__banner-about {
@@ -40,10 +49,24 @@
       margin: 6.5rem 0 0;
       border-radius: unset;
     }
+
+    &--about-us {
+      min-width: 35%;
+      max-width: 35%;
+
+      a {
+        width: 55%;
+        padding: 1.125rem 5rem 1.25rem;
+      }
+    }
   }
 
   &__banner-img-wrapper {
     margin: 0 0 0 -6%;
+
+    &--about-us {
+      margin: 0.8rem 0 0;
+    }
   }
 
   &__banner-img {

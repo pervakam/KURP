@@ -1,0 +1,114 @@
+.team {
+  background-image: url("../img/team-background-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 709px 657px;
+  background-position-y: 24%;
+  background-position-x: 53%;
+  padding: 6.4rem 0;
+
+  &__members {
+    list-style: none;
+    margin: 0 auto 16.6rem;
+    padding: 0;
+    width: 50rem;
+    text-align: left;
+  }
+
+  &__member {
+    width: 33.25%;
+
+    &--premysl {
+      width: 28%;
+      margin: -3.5rem 0 0 auto;
+    }
+
+    &--roman {
+      margin: -7rem 0 0 0;
+    }
+  }
+
+  &__member-photo {
+    width: 221px;
+    height: 221px;
+  }
+
+  &__member-name {
+    margin: 1.5rem 0 0;
+    font-family: $Vafle;
+    font-size: 1.875rem;
+  }
+
+  &__member-role {
+    margin: 2rem 0 0;
+    line-height: 144%;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .team {
+    background-image: none;
+    padding: 0 2rem 6rem;
+
+    &__members {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    &__member {
+      width: 100%;
+      margin: 0 0 2rem 0;
+
+      &--premysl {
+        width: 100%;
+        margin: 0 0 2rem 0;
+      }
+
+      &--roman {
+        margin: 0;
+      }
+    }
+
+    &__member-info {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__member-photo {
+      margin: 0 2rem 0 0;
+    }
+
+    &__member-name {
+      margin: 0;
+    }
+
+    &__member-role {
+      margin: 2rem 0 0;
+      line-height: 144%;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .team {
+    &__member {
+      align-items: flex-start;
+    }
+
+    &__member-photo {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .team {
+    padding: 0 1rem 3rem;
+
+    &__member-photo {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}

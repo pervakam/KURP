@@ -1,4 +1,3 @@
-// sliders
 const referenceList = document.querySelector('.reference__list');
 const reviewsList = document.querySelector('.reviews__list');
 
