@@ -48,7 +48,7 @@
                             <a class="nav-link page-header__nav-link" href="./about.html">KDO&nbsp;JSME</a>
                         </li>
                         <li class="nav-item page-header__nav-item">
-                            <a class="nav-link page-header__nav-link" href="./production.html">Co&nbsp;děláme</a>
+                            <a class="nav-link page-header__nav-link" href="#">Co&nbsp;děláme</a>
                         </li>
                         <li class="nav-item page-header__nav-item">
                             <a class="nav-link page-header__nav-link" href="#">reference</a>
@@ -73,152 +73,197 @@
 </header>
 
 <main class="page-main">
-    <section class="page-main__banner">
-        <div class="page-main__banner-wrapper">
-            <div class="page-main__banner-about">
-                <h1>Jsme specialisté na extrémní zasklívání a&nbsp;manipulaci mini jeřábem</h1>
-                <a class="btn" href="./about.html" role="button">VÍCE O NÁS</a>
-            </div>
-            <div class="page-main__banner-img-wrapper">
-                <img class="page-main__banner-img" src="img/home_banner.svg" alt="about KURP">
-            </div>
-        </div>
-    </section>
-    <div class="scroll">
-        <a href="#production" class="scroll__button">
-            <svg>
-                <use xlink:href="#arrow-icon"></use>
-            </svg>
-            <span class="visually-hidden">down</span>
-        </a>
-    </div>
-    <section class="production row" id="production">
-        <h2 class="title col-xs-12 col-xl-3 col-xxl-4">co&nbsp;děláme</h2>
-        <div class="about col-xs-12 col-xl-9 col-xxl-8">
-            <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prostorech?
-                Náš&nbsp;mini&nbsp;jeřáb&nbsp;je Vám k dispozici. Pomůžeme vám v široké paletě činností.</p>
-            <p> Pokládky panelů, svrchních vrstev, instalace skleněných výplní oken a zimních zahrad.
-                Náročné a jemné zvedání v úzkých rozích, domech a jejich okolí či na staveništích.</p>
-            <ul class="production__list row">
-                <li class="production__item production__item--cargo col-xs-12 col-md-4 col-xxl-4">
-                    <svg class="production__item-img">
-                        <use xlink:href="#cargo-icon"></use>
+    <section class="services">
+        <h2 class="title">co&nbsp;děláme</h2>
+        <p class="services__about-description">Potřebujete manipulovat s velkými břemeny v malých a úzkých prostorech?
+            Náš mini jeřáb je Vám k dispozici. Pomůžeme vám v široké paletě činností.</p>
+        <ul class="services__list">
+            <li class="services__item">
+                <div class="services__item-title">
+                    <svg class="services__item-img">
+                        <use xlink:href="#cargo-dark-icon"></use>
                     </svg>
                     <p>Přeprava nadrozměrných břemen</p>
-                </li>
-                <li class="production__item production__item--glass col-xs-12 col-md-4 col-xxl-4">
-                    <svg class="production__item-img">
-                        <use xlink:href="#glass-icon"></use>
+                </div>
+                <div class="services__item-description row">
+                    <p class="col-lg-6">Potřebujete manipulovat s velkými břemeny v malých a úzkých prosto-rech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.Pokládky panelů, svrchních vrstev, instalace
+                        skleněných výplní oken a zimních zahrad. Náročné a jemné zvedání v úzkých
+                        rozích, domech a jejich okolí či na staveništích.</p>
+                    <p class="col-lg-6">Potřebujete manipulovat s velkými břemeny v malých a úzkých prosto-rech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.Pokládky panelů, svrchních vrstev, instalace
+                        skleněných výplní oken a zimních zahrad. Náročné a jemné zvedání v úzkých
+                        rozích, domech a jejich okolí či na staveništích.</p>
+                </div>
+                <div class="reference__slider reference__slider--services">
+                    <div class="reference__list-next reference__list-next--hide">
+                        <svg class="reference__list-next-img">
+                            <use xlink:href="#arrow-navigation-left-icon"></use>
+                        </svg>
+                    </div>
+                    <div class="reference__swiper-container">
+                        <ul class="reference__list">
+                            <li class="reference__item">
+                                <a class="reference__item-link" href="#">
+                                    <picture>
+                                        <img loading="lazy" src="img/production-preview-1@1x.webp" srcset="img/production-preview-1@2x.webp 2x" alt="reference-pic">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="reference__item">
+                                <a class="reference__item-link" href="#">
+                                    <picture>
+                                        <img loading="lazy" src="img/production-preview-2@1x.webp" srcset="img/production-preview-2@2x.webp 2x" alt="reference-pic">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="reference__item">
+                                <a class="reference__item-link" href="#">
+                                    <picture>
+                                        <img loading="lazy" src="img/production-preview-3@1x.webp" srcset="img/production-preview-3@2x.webp 2x" alt="reference-pic">
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reference__list-prev">
+                        <svg class="reference__list-prev-img">
+                            <use xlink:href="#arrow-navigation-right-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <a href="./production.html" class="about-button about-button--services">DALŠÍ REFERENCE</a>
+            </li>
+            <li class="services__item">
+                <div class="services__item-title">
+                    <svg class="services__item-img">
+                        <use xlink:href="#glass-dark-icon"></use>
                     </svg>
                     <p>Zasklívání</p>
-                </li>
-                <li class="production__item production__item--manipulation col-xs-12 col-md-4 col-xxl-4">
-                    <svg class="production__item-img">
-                        <use xlink:href="#manipulation-icon"></use>
+                </div>
+                <div class="services__item-description row">
+                    <p class="col-lg-6">Potřebujete manipulovat s velkými břemeny v malých a úzkých prosto-rech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.Pokládky panelů, svrchních vrstev, instalace
+                        skleněných výplní oken a zimních zahrad. Náročné a jemné zvedání v úzkých
+                        rozích, domech a jejich okolí či na staveništích.</p>
+                    <p class="col-lg-6">Potřebujete manipulovat s velkými břemeny v malých a úzkých prosto-rech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.Pokládky panelů, svrchních vrstev, instalace
+                        skleněných výplní oken a zimních zahrad. Náročné a jemné zvedání v úzkých
+                        rozích, domech a jejich okolí či na staveništích.</p>
+                </div>
+                <div class="reference__slider reference__slider--services">
+                    <div class="reference__list-next reference__list-next--hide">
+                        <svg class="reference__list-next-img">
+                            <use xlink:href="#arrow-navigation-left-icon"></use>
+                        </svg>
+                    </div>
+                    <div class="reference__swiper-container">
+                        <ul class="reference__list">
+                            <li class="reference__item">
+                                <a class="reference__item-link" href="#">
+                                    <picture>
+                                        <img loading="lazy" src="img/production-preview-1@1x.webp" srcset="img/production-preview-1@2x.webp 2x" alt="reference-pic">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="reference__item">
+                                <a class="reference__item-link" href="#">
+                                    <picture>
+                                        <img loading="lazy" src="img/production-preview-2@1x.webp" srcset="img/production-preview-2@2x.webp 2x" alt="reference-pic">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="reference__item">
+                                <a class="reference__item-link" href="#">
+                                    <picture>
+                                        <img loading="lazy" src="img/production-preview-3@1x.webp" srcset="img/production-preview-3@2x.webp 2x" alt="reference-pic">
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reference__list-prev">
+                        <svg class="reference__list-prev-img">
+                            <use xlink:href="#arrow-navigation-right-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <a href="./production.html" class="about-button about-button--services">DALŠÍ REFERENCE</a>
+            </li>
+            <li class="services__item">
+                <div class="services__item-title">
+                    <svg class="services__item-img">
+                        <use xlink:href="#manipulation-dark-icon"></use>
                     </svg>
                     <p>Manipulace</p>
-                </li>
-            </ul>
-            <a href="./production.html" class="about-button">VÍCE O TOM CO DĚLÁME</a>
-        </div>
+                </div>
+                <div class="services__item-description row">
+                    <p class="col-lg-6">Potřebujete manipulovat s velkými břemeny v malých a úzkých prosto-rech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.Pokládky panelů, svrchních vrstev, instalace
+                        skleněných výplní oken a zimních zahrad. Náročné a jemné zvedání v úzkých
+                        rozích, domech a jejich okolí či na staveništích.</p>
+                    <p class="col-lg-6">Potřebujete manipulovat s velkými břemeny v malých a úzkých prosto-rech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.Pokládky panelů, svrchních vrstev, instalace
+                        skleněných výplní oken a zimních zahrad. Náročné a jemné zvedání v úzkých
+                        rozích, domech a jejich okolí či na staveništích.</p>
+                </div>
+                <div class="reference__slider reference__slider--services">
+                    <div class="reference__list-next reference__list-next--hide">
+                        <svg class="reference__list-next-img">
+                            <use xlink:href="#arrow-navigation-left-icon"></use>
+                        </svg>
+                    </div>
+                    <div class="reference__swiper-container">
+                        <ul class="reference__list">
+                            <li class="reference__item">
+                                <a class="reference__item-link" href="#">
+                                    <picture>
+                                        <img loading="lazy" src="img/production-preview-1@1x.webp" srcset="img/production-preview-1@2x.webp 2x" alt="reference-pic">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="reference__item">
+                                <a class="reference__item-link" href="#">
+                                    <picture>
+                                        <img loading="lazy" src="img/production-preview-2@1x.webp" srcset="img/production-preview-2@2x.webp 2x" alt="reference-pic">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="reference__item">
+                                <a class="reference__item-link" href="#">
+                                    <picture>
+                                        <img loading="lazy" src="img/production-preview-3@1x.webp" srcset="img/production-preview-3@2x.webp 2x" alt="reference-pic">
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reference__list-prev">
+                        <svg class="reference__list-prev-img">
+                            <use xlink:href="#arrow-navigation-right-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <a href="./production.html" class="about-button about-button--services">DALŠÍ REFERENCE</a>
+            </li>
+        </ul>
     </section>
-    <section class="reference row">
-        <h2 class="title col-xs-12 col-xl-3 col-xxl-4">reference</h2>
-        <div class="about col-xs-12 col-xl-9 col-xxl-8">
-            <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prostorech? Náš&nbsp;mini&nbsp;jeřáb&nbsp;je
-                Vám k dispozici. Pomůžeme vám v široké paletě činností.</p>
-            <div class="reference__slider">
-                <div class="reference__list-next">
-                    <svg class="reference__list-next-img">
-                        <use xlink:href="#arrow-navigation-left-icon"></use>
-                    </svg>
-                </div>
-                <div class="reference__swiper-container">
-                    <ul class="reference__list">
-                        <li class="reference__item">
-                            <a class="reference__item-link" href="#">
-                                <picture>
-                                    <img loading="lazy" src="img/production-preview-1@1x.webp" srcset="img/production-preview-1@2x.webp 2x" alt="reference-pic">
-                                </picture>
-                            </a>
-                        </li>
-                        <li class="reference__item">
-                            <a class="reference__item-link" href="#">
-                                <picture>
-                                    <img loading="lazy" src="img/production-preview-2@1x.webp" srcset="img/production-preview-2@2x.webp 2x" alt="reference-pic">
-                                </picture>
-                            </a>
-                        </li>
-                        <li class="reference__item">
-                            <a class="reference__item-link" href="#">
-                                <picture>
-                                    <img loading="lazy" src="img/production-preview-3@1x.webp" srcset="img/production-preview-3@2x.webp 2x" alt="reference-pic">
-                                </picture>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="reference__list-prev reference__list-prev--hide">
-                    <svg class="reference__list-prev-img">
-                        <use xlink:href="#arrow-navigation-right-icon"></use>
-                    </svg>
-                </div>
-            </div>
-            <a href="" class="about-button">VÍCE REFERENCÍ</a>
-        </div>
+    <section class="technique">
+        <h2 class="title">Naše technika</h2>
+        <ul class="technique__list">
+            <li class="technique__item">
+                <picture>
+                    <img loading="lazy" src="img/technique@1x.webp" srcset="img/technique@2x.webp 2x" alt="technique-img">
+                </picture>
+                <p class="technique__item-title">Minijeřáb TGT ROBBY 900S</p>
+                <p class="technique__item-description">Špičkový zasklívací robot - minijeřáb, vhodný pro zasklívání v exteriéru a interiéru budov.</p>
+                <a class="btn" href="#" role="button">Více informací</a>
+            </li>
+        </ul>
     </section>
-    <section class="reviews row">
-        <h2 class="title col-xs-12 col-xl-3 col-xxl-4">zákazníci o&nbsp;nás&nbsp;říkají</h2>
-        <div class="about col-xs-12 col-xl-9 col-xxl-8">
-            <div class="reviews__slider">
-                <div class="reviews__list-next">
-                    <svg>
-                        <use xlink:href="#arrow-icon"></use>
-                    </svg>
-                </div>
-                <div class="reviews__swiper-container">
-                    <ul class="reviews__list">
-                        <li class="reviews__item">
-                            <img loading="lazy" class="reviews__author-photo" src="img/male-user-icon.svg" alt="user_photo">
-                            <div class="reviews__text">
-                                <blockquote>
-                                    „Vyřiďte prosím poděkování montážnímu týmu, který u mě okna montoval, za skvělé
-                                    provedenou
-                                    práci, pečlivost a přistup ke své profesi. Taktéž mé poděkování patří celému
-                                    výrobnímu
-                                    týmu
-                                    a p.
-                                    Halodovi. Okna jsou opravdu moc pěkná.“
-                                </blockquote>
-                                <cite>Libor Fojtík <span>/</span> Jednatel společnosti AMR System</cite>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="reviews__list-prev">
-                    <svg>
-                        <use xlink:href="#arrow-icon"></use>
-                    </svg>
-                </div>
-            </div>
-            <a href="" class="about-button">VÍCE REAKCÍ</a>
-        </div>
-    </section>
-    <section class="contacts row">
-        <h2 class="title col-xs-12 col-xl-3 col-xxl-4">KONTAKT</h2>
-        <div class="contacts__about about col-xs-12 col-xl-9 col-xxl-8">
-            <p>Potřebujete pomoci? Ozvěte se nám a&nbsp;společně vymyslíme a zrealizujeme řešení.</p>
-            <a href="tel:+420774665693">+420 774 665 693</a>
-            <span>nebo</span>
-            <a href="mailto:info@kuprminijeraby.cz">info@kuprminijeraby.cz</a>
-        </div>
-    </section>
-    <section class="note">
-        <blockquote>
-            „Skvělé věci pocházejí z tvrdé práce a vytrvalosti.<br>
-            Bez výmluv.“
-        </blockquote>
-        <cite>Kobe Bryant</cite>
+    <section class="link">
+        <p>Co říkají naši zákazníci o spolupráci s námi?</p>
+        <a class="btn" href="#" role="button">POKRAČOVAT</a>
     </section>
 </main>
 
