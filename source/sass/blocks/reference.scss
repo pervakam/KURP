@@ -7,6 +7,16 @@
     margin: 4.75rem 0 0;
     position: relative;
     z-index: 0;
+
+    &--services {
+      .reference__swiper-container {
+        margin: 0 9.5rem 0 0;
+      }
+
+      .reference__list-prev {
+        right: -2.5vw;
+      }
+    }
   }
 
   &__swiper-container {
@@ -69,6 +79,18 @@
   }
 }
 
+@include media-breakpoint-down(xxl) {
+  .reference {
+    &__slider {
+      &--services {
+        .reference__list-prev {
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
 @include media-breakpoint-down(xl) {
   .reference {
     padding: 3rem 2rem;
@@ -87,6 +109,22 @@
 
     &__list-prev {
       right: -1rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .reference {
+    &__slider {
+      &--services {
+        .reference__swiper-container {
+          margin: 0;
+        }
+
+        .reference__list-prev {
+          right: -1rem;
+        }
+      }
     }
   }
 }

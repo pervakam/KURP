@@ -13,11 +13,35 @@
     color: $black;
     text-decoration: none;
   }
+
+  &--services {
+    position: absolute;
+    right: -4.1vw;
+    bottom: 3.8rem;
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .about-button {
+    &--services {
+      right: -2vw;
+    }
+  }
 }
 
 @include media-breakpoint-down(xl) {
   .about-button {
     margin: 3rem 0 0;
     text-align: center;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .about-button {
+    &--services {
+      position: relative;
+      right: unset;
+      bottom: unset;
+    }
   }
 }
