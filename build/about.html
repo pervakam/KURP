@@ -77,7 +77,7 @@
         <div class="page-main__banner-wrapper page-main__banner-wrapper--about-us">
             <div class="page-main__banner-about page-main__banner-about--about-us">
                 <h1>Jsme rodinná&nbsp;firma, sehraný tým, který táhne za jeden provaz</h1>
-                <a class="btn" href="#" role="button">POKRAČOVAT</a>
+                <a class="btn button__yellow" href="#" role="button">POKRAČOVAT</a>
             </div>
             <div class="page-main__banner-img-wrapper page-main__banner-img-wrapper--about-us">
                 <img class="page-main__banner-img" src="img/about_banner.svg" alt="about KURP">
@@ -110,7 +110,8 @@
             </div>
             <div class="about-us__img">
                 <picture>
-                    <img loading="lazy" src="img/about-us@1x.webp" srcset="img/about-us@2x.webp 2x" alt="our_team">
+                    <source type="image/webp" srcset="img/about-us@1x.webp 1x, img/about-us@2x.webp 2x">
+                    <img loading="lazy" src="img/about-us@1x.jpg" srcset="img/about-us@2x.jpg 2x" alt="our_team">
                 </picture>
             </div>
         </div>
@@ -120,7 +121,8 @@
             <li class="team__member">
                 <div class="team__member-info" data-depth="0.2">
                     <picture>
-                        <img class="team__member-photo" src="img/jacub-photo@1x.webp" srcset="img/jacub-photo@2x.webp 2x" alt="Jacub photo">
+                        <source type="image/webp" srcset="img/jacub-photo@1x.webp 1x, img/jacub-photo@2x.webp 2x">
+                        <img loading="lazy" class="team__member-photo" src="img/jacub-photo@1x.png" srcset="img/jacub-photo@2x.png 2x" alt="Jacub photo">
                     </picture>
                     <div class="team__member-description">
                         <p class="team__member-name">Jacub</p>
@@ -133,7 +135,8 @@
             <li class="team__member team__member--premysl">
                 <div class="team__member-info" data-depth="0.1">
                     <picture>
-                        <img class="team__member-photo" src="img/premysl-photo@1x.webp" srcset="img/premysl-photo@2x.webp 2x" alt="Premysl photo">
+                        <source type="image/webp" srcset="img/premysl-photo@1x.webp 1x, img/premysl-photo@2x.webp 2x">
+                        <img loading="lazy" class="team__member-photo" src="img/premysl-photo@1x.png" srcset="img/premysl-photo@2x.png 2x" alt="Premysl photo">
                     </picture>
                     <div class="team__member-description">
                         <p class="team__member-name">Přemysl</p>
@@ -145,7 +148,8 @@
             <li class="team__member team__member--roman">
                 <div class="team__member-info" data-depth="0.3">
                     <picture>
-                        <img class="team__member-photo" src="img/roman-photo@1x.webp" srcset="img/roman-photo@2x.webp 2x" alt="Roman photo">
+                        <source type="image/webp" srcset="img/roman-photo@1x.webp 1x, img/roman-photo@2x.webp 2x">
+                        <img loading="lazy" class="team__member-photo" src="img/roman-photo@1x.png" srcset="img/roman-photo@2x.png 2x" alt="Roman photo">
                     </picture>
                     <div class="team__member-description">
                         <p class="team__member-name">Roman</p>
@@ -156,12 +160,11 @@
                 <div class="team__member-parallax-background" data-depth="0.7"></div>
             </li>
         </ul>
-
     </section>
     <section class="link">
         <p>Zájímá vás jak pracujeme?</p>
         <p>Prohlédněte si naše reference</p>
-        <a class="btn" href="#" role="button">REFERENCE</a>
+        <a class="btn button__yellow" href="#" role="button">REFERENCE</a>
     </section>
     <section class="note">
         <blockquote>
@@ -203,6 +206,6 @@
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/parallax.min.js"></script>
-<script src="js/team-parallax.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

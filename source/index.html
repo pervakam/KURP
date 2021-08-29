@@ -81,7 +81,7 @@
         <div class="page-main__banner-wrapper">
             <div class="page-main__banner-about">
                 <h1>Jsme specialisté na extrémní zasklívání a&nbsp;manipulaci mini jeřábem</h1>
-                <a class="btn" href="./about.html" role="button">VÍCE O NÁS</a>
+                <a class="btn button__yellow" href="./about.html" role="button">VÍCE O NÁS</a>
             </div>
             <div class="page-main__banner-img-wrapper">
                 <img class="page-main__banner-img" src="img/home_banner.svg" alt="about KURP">
@@ -123,7 +123,7 @@
                     <p>Manipulace</p>
                 </li>
             </ul>
-            <a href="./production.html" class="about-button">VÍCE O TOM CO DĚLÁME</a>
+            <a href="./production.html" class="button__about">VÍCE O TOM CO DĚLÁME</a>
         </div>
     </section>
     <section class="reference row">
@@ -131,19 +131,21 @@
         <div class="about col-xs-12 col-xl-9 col-xxl-8">
             <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prostorech? Náš&nbsp;mini&nbsp;jeřáb&nbsp;je
                 Vám k dispozici. Pomůžeme vám v široké paletě činností.</p>
-            <div class="reference__slider">
-                <div class="reference__list-next">
+            <div class="reference__slider reference__slider--main">
+                <div class="reference__list-next reference__list-next--main">
                     <svg class="reference__list-next-img">
                         <use xlink:href="#arrow-navigation-left-icon"></use>
                     </svg>
                 </div>
-                <div class="reference__swiper-container">
+                <div class="reference__swiper-container reference__swiper-container--main">
                     <ul class="reference__list">
                         <li class="reference__item">
                             <a class="reference__item-link" href="#">
                                 <picture>
-                                    <img loading="lazy" src="img/production-preview-1@1x.webp"
-                                         srcset="img/production-preview-1@2x.webp 2x"
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
                                          alt="reference-pic">
                                 </picture>
                             </a>
@@ -151,8 +153,10 @@
                         <li class="reference__item">
                             <a class="reference__item-link" href="#">
                                 <picture>
-                                    <img loading="lazy" src="img/production-preview-2@1x.webp"
-                                         srcset="img/production-preview-2@2x.webp 2x"
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
                                          alt="reference-pic">
                                 </picture>
                             </a>
@@ -160,21 +164,23 @@
                         <li class="reference__item">
                             <a class="reference__item-link" href="#">
                                 <picture>
-                                    <img loading="lazy" src="img/production-preview-3@1x.webp"
-                                         srcset="img/production-preview-3@2x.webp 2x"
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
                                          alt="reference-pic">
                                 </picture>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="reference__list-prev reference__list-prev--hide">
+                <div class="reference__list-prev reference__list-prev--main reference__list-prev--hide">
                     <svg class="reference__list-prev-img">
                         <use xlink:href="#arrow-navigation-right-icon"></use>
                     </svg>
                 </div>
             </div>
-            <a href="" class="about-button">VÍCE REFERENCÍ</a>
+            <a href="" class="button__about">VÍCE REFERENCÍ</a>
         </div>
     </section>
     <section class="reviews row">
@@ -212,7 +218,7 @@
                     </svg>
                 </div>
             </div>
-            <a href="" class="about-button">VÍCE REAKCÍ</a>
+            <a href="" class="button__about">VÍCE REAKCÍ</a>
         </div>
     </section>
     <section class="contacts row">
@@ -263,7 +269,7 @@
 </footer>
 
 <script src="js/bootstrap.min.js"></script>
-<script src="js/swiper-bundle.js"></script>
-<script src="js/sliders.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -85,7 +85,7 @@
     transform: rotate(-90deg);
   }
 
-  .about-button {
+  .button__about {
     margin: 4rem 0 0;
   }
 }
@@ -96,7 +96,7 @@
     margin: 0;
 
     .title,
-    .about-button {
+    .button__about {
       padding-left: 2rem;
     }
 
@@ -131,21 +131,33 @@
 
 @include media-breakpoint-down(sm) {
   .reviews {
+    padding: 3rem 1rem;
+
     .title,
-    .about-button {
-      padding-left: 1rem;
+    .button__about {
+      padding-left: 0;
     }
 
     &__slider {
-      padding-left: 3rem;
+      padding-left: 0;
     }
 
     &__item {
       flex-direction: column;
+
+      blockquote {
+        width: 100%;
+      }
     }
 
     &__author-photo {
       margin: 0 0 1rem 0;
+    }
+
+    &__list-next,
+    &__list-prev {
+      bottom: unset;
+      top: 14%;
     }
   }
 }

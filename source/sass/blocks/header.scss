@@ -40,6 +40,10 @@
   &__nav-link {
     color: $black-text !important;
 
+    &:hover {
+      color: $gray !important;
+    }
+
     &--cz {
       padding-right: 0 !important;
     }
@@ -47,7 +51,14 @@
     &--pl {
       padding-left: 0 !important;
       text-decoration: underline;
+
+      &:hover {
+        color: $black-text !important;
+        text-decoration: none;
+      }
     }
+
+
   }
 
   &__nav-link-active {

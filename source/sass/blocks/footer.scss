@@ -41,10 +41,8 @@
       line-height: 126%;
       color: $black-text;
       width: fit-content;
-    }
 
-    &--contacts {
-      a:first-of-type {
+      &:hover {
         text-decoration: none;
       }
     }

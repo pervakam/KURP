@@ -1,0 +1,74 @@
+.button {
+  &__about {
+    display: block;
+    margin: 5.1rem 0 0;
+    font-family: $Vafle;
+    font-size: 1.187rem;
+    line-height: 126%;
+    text-transform: uppercase;
+    letter-spacing: 0.035em;
+    color: $black;
+    width: fit-content;
+
+    &:hover {
+      color: $black;
+      text-decoration: none;
+    }
+
+    &--services {
+      position: absolute;
+      right: -4.1vw;
+      bottom: 3.8rem;
+    }
+  }
+
+  &__yellow {
+    background-color: $yellow;
+    color: $black-text;
+    font-family: $Vafle;
+    font-size: 1.1875rem;
+    letter-spacing: 0.05em;
+    line-height: 126%;
+    border-radius: unset;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $yellow-dark;
+    }
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .button {
+    &__about {
+      &--services {
+        right: -2vw;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .button {
+    &__about {
+      margin: 3rem 0 0;
+      text-align: center;
+    }
+
+    &__yellow {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .button {
+    &__about {
+      &--services {
+        position: relative;
+        right: unset;
+        bottom: unset;
+      }
+    }
+  }
+}
