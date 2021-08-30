@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>KURP</title>
+    <meta name="description" content="KURP">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/bc-vafle-classic.woff2" as="font" crossorigin="anonymous" type="font/woff">
+    <link rel="preload" href="fonts/inconsolata-regular.woff2" as="font" crossorigin="anonymous" type="font/woff">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+
+<body>
+
+<div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+</div>
+
+<header class="page-header container-fluid">
+    <div class="page-header__wrapper">
+        <nav class="navbar navbar-expand-xl navbar-light bg-light">
+            <div class="container-fluid justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <svg class="page-header__logo">
+                        <use xlink:href="#logo-icon"></use>
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="page-header__collapse collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav page-header__nav">
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link" aria-current="page"
+                               href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link" href="./about.html">KDO&nbsp;JSME</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link" href="./production.html">Co&nbsp;děláme</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link" href="#">reference</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link page-header__nav-link-active" href="#">říkají&nbsp;o&nbsp;nás</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link" href="#">partneři</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link" href="./contacts.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item page-header__nav-item--lang">
+                            <a class="nav-link page-header__nav-link page-header__nav-link--cz page-header__nav-link-active"
+                               href="#">cz</a><span>/</span><a
+                                class="nav-link page-header__nav-link page-header__nav-link--pl" href="#">PL</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="page-main">
+    <section class="partners">
+        <h2 class="title">partneři</h2>
+        <ul class="partners__list">
+            <li class="partners__item">
+                <picture>
+                    <source type="image/webp"
+                            srcset="img/partner-logo-1@1x.webp 1x, img/partner-logo-1@2x.webp 2x">
+                    <img class="partner__logo"
+                         loading="lazy" src="img/partner-logo-1@1x.jpg"
+                         srcset="img/partner-logo-1@2x.jpg 2x"
+                         alt="partner_logo-pic">
+                </picture>
+                <div class="partners__description">
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prostorech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.</p>
+                    <a href="https://www.oknakolovrat.cz/">www.oknakolovrat.cz</a>
+                </div>
+            </li>
+            <li class="partners__item">
+                <picture>
+                    <source type="image/webp"
+                            srcset="img/partner-logo-1@1x.webp 1x, img/partner-logo-1@2x.webp 2x">
+                    <img class="partner__logo"
+                         loading="lazy" src="img/partner-logo-1@1x.jpg"
+                         srcset="img/partner-logo-1@2x.jpg 2x"
+                         alt="partner_logo-pic">
+                </picture>
+                <div class="partners__description">
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prostorech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.</p>
+                    <a href="https://www.oknakolovrat.cz/">www.oknakolovrat.cz</a>
+                </div>
+            </li>
+            <li class="partners__item">
+                <picture>
+                    <source type="image/webp"
+                            srcset="img/partner-logo-1@1x.webp 1x, img/partner-logo-1@2x.webp 2x">
+                    <img class="partner__logo"
+                         loading="lazy" src="img/partner-logo-1@1x.jpg"
+                         srcset="img/partner-logo-1@2x.jpg 2x"
+                         alt="partner_logo-pic">
+                </picture>
+                <div class="partners__description">
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prostorech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.</p>
+                    <a href="https://www.oknakolovrat.cz/">www.oknakolovrat.cz</a>
+                </div>
+            </li>
+            <li class="partners__item">
+                <picture>
+                    <source type="image/webp"
+                            srcset="img/partner-logo-1@1x.webp 1x, img/partner-logo-1@2x.webp 2x">
+                    <img class="partner__logo"
+                         loading="lazy" src="img/partner-logo-1@1x.jpg"
+                         srcset="img/partner-logo-1@2x.jpg 2x"
+                         alt="partner_logo-pic">
+                </picture>
+                <div class="partners__description">
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prostorech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.</p>
+                    <a href="https://www.oknakolovrat.cz/">www.oknakolovrat.cz</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

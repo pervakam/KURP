@@ -9430,6 +9430,20 @@ body {
         -ms-flex-pack: start;
             justify-content: flex-start;
     position: relative; }
+    .reviews__list--comments {
+      display: block;
+      margin: 2rem 0 0; }
+      .reviews__list--comments .reviews__item {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        padding: 4.4rem 0 3.2rem; }
+        .reviews__list--comments .reviews__item blockquote p {
+          margin: 0 0 1.5rem 0; }
+        .reviews__list--comments .reviews__item:not(:last-child) {
+          border-bottom: 1px solid #e2e2e2; }
+      .reviews__list--comments .reviews__author-photo {
+        margin: 0 4% 0 0; }
   .reviews__item {
     min-width: 100%;
     display: -webkit-box;
@@ -9513,6 +9527,10 @@ body {
       padding-left: 0; }
     .reviews__slider {
       padding-left: 0; }
+    .reviews__list--comments .reviews__item {
+      padding: 3rem 0 2rem; }
+    .reviews__list--comments .reviews__author-photo {
+      margin: 0 auto 2rem; }
     .reviews__item {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -9785,7 +9803,7 @@ body {
     margin: 0; }
   .link a {
     width: 16.25rem;
-    padding: 1.25rem 4.75rem 1.25rem 4.75rem;
+    padding: 1.25rem;
     margin: 3.6rem 0 0; }
 
 @media (max-width: 1199.98px) {
@@ -9953,5 +9971,116 @@ body {
 @media (max-width: 575.98px) {
   .technique {
     padding: 0 1rem; } }
+
+.comments {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100%;
+  max-width: 86rem;
+  margin: 5rem auto;
+  padding: 0 3rem;
+  text-align: left; }
+  .comments h2 {
+    padding: 0;
+    margin: 0 0 2.4rem; }
+
+@media (max-width: 1399.98px) {
+  .comments {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 3rem 2rem;
+    margin: 0; } }
+
+@media (max-width: 575.98px) {
+  .comments {
+    padding: 3rem 1rem; } }
+
+.partners {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100%;
+  max-width: 86rem;
+  margin: 5rem auto;
+  padding: 0 3rem;
+  text-align: left; }
+  .partners h2 {
+    padding: 0;
+    margin: 0 0 2.4rem; }
+  .partners__list {
+    list-style: none;
+    margin: 4.2rem 0 0;
+    padding: 0; }
+  .partners__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 3rem; }
+  .partners__logo {
+    width: 240px;
+    height: 177px; }
+  .partners__description {
+    width: 51%;
+    margin: 0 0 0 3%;
+    font-size: 1.187rem;
+    line-height: 137%; }
+    .partners__description p {
+      margin: 0; }
+    .partners__description a {
+      display: block;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin: 2rem 0 0;
+      color: #292929; }
+      .partners__description a:hover {
+        text-decoration: none; }
+
+@media (max-width: 1399.98px) {
+  .partners {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 3rem 2rem;
+    margin: 0; } }
+
+@media (max-width: 1199.98px) {
+  .partners__description {
+    width: 100%; } }
+
+@media (max-width: 575.98px) {
+  .partners {
+    padding: 3rem 1rem; }
+    .partners__item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin: 0 0 2rem; }
+    .partners__logo {
+      width: 240px;
+      height: 177px; } }
+
+.contact {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100%;
+  max-width: 86rem;
+  margin: 5rem auto;
+  padding: 0 3rem;
+  text-align: left; }
+  .contact h2 {
+    padding: 0;
+    margin: 5rem 0 1.5rem; }
+  .contact__about-description {
+    margin: 0;
+    font-size: 1.187rem;
+    line-height: 137%;
+    width: 51%;
+    padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

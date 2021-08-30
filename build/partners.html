@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>KDO SJME</title>
+    <title>KURP</title>
     <meta name="description" content="KURP">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -45,7 +45,7 @@
                             <a class="nav-link page-header__nav-link" aria-current="page" href="./index.html">HOME</a>
                         </li>
                         <li class="nav-item page-header__nav-item">
-                            <a class="nav-link page-header__nav-link page-header__nav-link-active" href="#">KDO&nbsp;JSME</a>
+                            <a class="nav-link page-header__nav-link" href="./about.html">KDO&nbsp;JSME</a>
                         </li>
                         <li class="nav-item page-header__nav-item">
                             <a class="nav-link page-header__nav-link" href="./production.html">Co&nbsp;děláme</a>
@@ -54,10 +54,10 @@
                             <a class="nav-link page-header__nav-link" href="#">reference</a>
                         </li>
                         <li class="nav-item page-header__nav-item">
-                            <a class="nav-link page-header__nav-link" href="./reviews.html">říkají&nbsp;o&nbsp;nás</a>
+                            <a class="nav-link page-header__nav-link page-header__nav-link-active" href="#">říkají&nbsp;o&nbsp;nás</a>
                         </li>
                         <li class="nav-item page-header__nav-item">
-                            <a class="nav-link page-header__nav-link" href="./partners.html">partneři</a>
+                            <a class="nav-link page-header__nav-link" href="#">partneři</a>
                         </li>
                         <li class="nav-item page-header__nav-item">
                             <a class="nav-link page-header__nav-link" href="./contacts.html">Kontakt</a>
@@ -73,139 +73,57 @@
 </header>
 
 <main class="page-main">
-    <section class="page-main__banner page-main__banner--about-us">
-        <div class="page-main__banner-wrapper page-main__banner-wrapper--about-us">
-            <div class="page-main__banner-about page-main__banner-about--about-us">
-                <h1>Jsme rodinná&nbsp;firma, sehraný tým, který táhne za jeden provaz</h1>
-                <a class="btn button__yellow" href="#" role="button">POKRAČOVAT</a>
-            </div>
-            <div class="page-main__banner-img-wrapper page-main__banner-img-wrapper--about-us">
-                <img class="page-main__banner-img" src="img/about_banner.svg" alt="about KURP">
-            </div>
-        </div>
-    </section>
-    <div class="scroll">
-        <a href="#about-us" class="scroll__button">
-            <svg>
-                <use xlink:href="#arrow-icon"></use>
-            </svg>
-            <span class="visually-hidden">down</span>
-        </a>
-    </div>
-    <section class="about-us" id="about-us">
-        <div class="about-us__wrapper">
-            <div class="about-us__description">
-                <h1 class="title title--about-us">o nás</h1>
-                <p>Na základě mnohaletých zkušenosti v okenářske branži a stále rozvíjejících se požadavků architektů,
-                    jenž kladou důraz na co největší prosklené prvky s extrémní hmotností jsme se rozhodli pro usnadnění
-                    práce při realizaci zasklívani pomoci minijeřábu a speciální manipulační techniky.</p>
-                <p>Špičkových vlastnosti minijeřábu lze dosáhnout pouze v kombinaci s profesionální obsluhou těchto
-                    strojů, která musí disponovat technickou zdatností a důrazem na přesnost.</p>
-                <p>Firma Kupr minijeřáby disponuje touto profesionální manipulační technikou včetně obsluhy, která je
-                    Vám připravena vyřešit i ty nejnáročnější projekty zasklívání nadrozměrných a těžkých prvku přímo u
-                    Vás na stavbě.</p>
-                <p>Hovoří za nás spousta realizovaných projektu a spokojených zákazníků včetně největších odborníků
-                    skrze samotných výrobců otvorových výplní.</p>
-                <p>Kupr minijeřáby se rádi stanou součástí při realizaci Vašeho vysněného domova.</p>
-            </div>
-            <div class="about-us__img">
+    <section class="partners">
+        <h2 class="title">partneři</h2>
+        <ul class="partners__list">
+            <li class="partners__item">
                 <picture>
-                    <source type="image/webp" srcset="img/about-us@1x.webp 1x, img/about-us@2x.webp 2x">
-                    <img loading="lazy" src="img/about-us@1x.jpg" srcset="img/about-us@2x.jpg 2x" alt="our_team">
+                    <source type="image/webp" srcset="img/partner-logo-1@1x.webp 1x, img/partner-logo-1@2x.webp 2x">
+                    <img class="partner__logo" loading="lazy" src="img/partner-logo-1@1x.jpg" srcset="img/partner-logo-1@2x.jpg 2x" alt="partner_logo-pic">
                 </picture>
-            </div>
-        </div>
-    </section>
-    <section class="team">
-        <ul class="team__members">
-            <li class="team__member">
-                <div class="team__member-info" data-depth="0.2">
-                    <picture>
-                        <source type="image/webp" srcset="img/jacub-photo@1x.webp 1x, img/jacub-photo@2x.webp 2x">
-                        <img loading="lazy" class="team__member-photo" src="img/jacub-photo@1x.png" srcset="img/jacub-photo@2x.png 2x" alt="Jacub photo">
-                    </picture>
-                    <div class="team__member-description">
-                        <p class="team__member-name">Jacub</p>
-                        <p class="team__member-role">Centrální mozek společnosti, technik starající se o
-                            komunikaci se zákazníkem.</p>
-                    </div>
+                <div class="partners__description">
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prostorech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.</p>
+                    <a href="https://www.oknakolovrat.cz/">www.oknakolovrat.cz</a>
                 </div>
-                <div class="team__member-parallax-background" data-depth="0.6"></div>
             </li>
-            <li class="team__member team__member--premysl">
-                <div class="team__member-info" data-depth="0.1">
-                    <picture>
-                        <source type="image/webp" srcset="img/premysl-photo@1x.webp 1x, img/premysl-photo@2x.webp 2x">
-                        <img loading="lazy" class="team__member-photo" src="img/premysl-photo@1x.png" srcset="img/premysl-photo@2x.png 2x" alt="Premysl photo">
-                    </picture>
-                    <div class="team__member-description">
-                        <p class="team__member-name">Přemysl</p>
-                        <p class="team__member-role">Technická podpora při řešení konkrétních projektů.</p>
-                    </div>
+            <li class="partners__item">
+                <picture>
+                    <source type="image/webp" srcset="img/partner-logo-1@1x.webp 1x, img/partner-logo-1@2x.webp 2x">
+                    <img class="partner__logo" loading="lazy" src="img/partner-logo-1@1x.jpg" srcset="img/partner-logo-1@2x.jpg 2x" alt="partner_logo-pic">
+                </picture>
+                <div class="partners__description">
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prostorech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.</p>
+                    <a href="https://www.oknakolovrat.cz/">www.oknakolovrat.cz</a>
                 </div>
-                <div class="team__member-parallax-background" data-depth="0.5"></div>
             </li>
-            <li class="team__member team__member--roman">
-                <div class="team__member-info" data-depth="0.3">
-                    <picture>
-                        <source type="image/webp" srcset="img/roman-photo@1x.webp 1x, img/roman-photo@2x.webp 2x">
-                        <img loading="lazy" class="team__member-photo" src="img/roman-photo@1x.png" srcset="img/roman-photo@2x.png 2x" alt="Roman photo">
-                    </picture>
-                    <div class="team__member-description">
-                        <p class="team__member-name">Roman</p>
-                        <p class="team__member-role">Odborník na obsluhu a servis manipulační techniky s profesionálním
-                            přístupem.</p>
-                    </div>
+            <li class="partners__item">
+                <picture>
+                    <source type="image/webp" srcset="img/partner-logo-1@1x.webp 1x, img/partner-logo-1@2x.webp 2x">
+                    <img class="partner__logo" loading="lazy" src="img/partner-logo-1@1x.jpg" srcset="img/partner-logo-1@2x.jpg 2x" alt="partner_logo-pic">
+                </picture>
+                <div class="partners__description">
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prostorech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.</p>
+                    <a href="https://www.oknakolovrat.cz/">www.oknakolovrat.cz</a>
                 </div>
-                <div class="team__member-parallax-background" data-depth="0.7"></div>
+            </li>
+            <li class="partners__item">
+                <picture>
+                    <source type="image/webp" srcset="img/partner-logo-1@1x.webp 1x, img/partner-logo-1@2x.webp 2x">
+                    <img class="partner__logo" loading="lazy" src="img/partner-logo-1@1x.jpg" srcset="img/partner-logo-1@2x.jpg 2x" alt="partner_logo-pic">
+                </picture>
+                <div class="partners__description">
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prostorech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.</p>
+                    <a href="https://www.oknakolovrat.cz/">www.oknakolovrat.cz</a>
+                </div>
             </li>
         </ul>
-    </section>
-    <section class="link">
-        <p>Zájímá vás jak pracujeme?</p>
-        <p>Prohlédněte si naše reference</p>
-        <a class="btn button__yellow" href="#" role="button">REFERENCE</a>
-    </section>
-    <section class="note">
-        <blockquote>
-            „Skvělé věci pocházejí z tvrdé práce a vytrvalosti.<br>
-            Bez výmluv.“
-        </blockquote>
-        <cite>Kobe Bryant</cite>
     </section>
 </main>
 
-<footer class="page-footer container-fluid">
-    <div class="page-footer__wrapper">
-        <ul class="page-footer__list row">
-            <li class="col-sm-6 col-xl-2 col-xxl-2 page-footer__item page-footer__item--network">
-                <strong>Sledujte nás</strong>
-                <a href="">
-                    <svg class="page-footer__network-logo">
-                        <use xlink:href="#youtube-icon"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="col-sm-6 col-xl-4 col-xxl-4 page-footer__item page-footer__item--address">
-                <strong>Office</strong>
-                <p>17. listopadu 908/12</p>
-                <p>Opava 746 01</p>
-                <a href="#">Najít na mapě</a>
-            </li>
-            <li class="col-sm-6 col-xl-4 col-xxl-4 page-footer__item page-footer__item--contacts">
-                <strong>Kontakt</strong>
-                <a href="tel:+420774665693">+420 774 665 693</a>
-                <a href="mailto:info@kuprminijeraby.cz">info@kuprminijeraby.cz</a>
-            </li>
-            <li class="col-sm-6 col-xl-2 col-xxl-2 page-footer__item page-footer__item--copyright">
-                <strong>©2021&nbsp;Copyright</strong>
-            </li>
-        </ul>
-    </div>
-</footer>
-
 <script src="js/bootstrap.min.js"></script>
-<script src="js/parallax.min.js"></script>
-<script src="js/main.min.js"></script>
 </body>
 </html>

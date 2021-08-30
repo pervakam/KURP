@@ -1,0 +1,35 @@
+.comments {
+  box-sizing: content-box;
+  width: 100%;
+  max-width: 86rem;
+  margin: 5rem auto;
+  padding: 0 3rem;
+  text-align: left;
+
+  h2 {
+    padding: 0;
+    margin: 0 0 2.4rem;
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .comments {
+    box-sizing: border-box;
+    padding: 3rem 2rem;
+    margin: 0;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+
+}
+
+@include media-breakpoint-down(lg) {
+
+}
+
+@include media-breakpoint-down(sm) {
+  .comments {
+    padding: 3rem 1rem;
+  }
+}
