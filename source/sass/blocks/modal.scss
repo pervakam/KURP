@@ -1,0 +1,65 @@
+.modal {
+  &__overlay {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 37, 41, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__message {
+    position: relative;
+    z-index: 100;
+    padding: 2rem;
+    background-color: $white;
+    box-sizing: border-box;
+    text-align: right;
+    max-width: 50vw;
+    height: fit-content;
+    border-radius: 0.5rem;
+
+    p {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  &__close {
+    position: relative;
+    margin: 0 0 0 auto;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: -0.5rem;
+      right: 0;
+      width: 2rem;
+      height: 2px;
+      background-color: $black-text;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}

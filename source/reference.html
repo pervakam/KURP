@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>KURP</title>
+    <meta name="description" content="KURP">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/bc-vafle-classic.woff2" as="font" crossorigin="anonymous" type="font/woff">
+    <link rel="preload" href="fonts/inconsolata-regular.woff2" as="font" crossorigin="anonymous" type="font/woff">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+
+<body>
+
+<div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+</div>
+
+<header class="page-header container-fluid">
+    <div class="page-header__wrapper">
+        <nav class="navbar navbar-expand-xl navbar-light bg-light">
+            <div class="container-fluid justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <svg class="page-header__logo">
+                        <use xlink:href="#logo-icon"></use>
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="page-header__collapse collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav page-header__nav">
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link" aria-current="page"
+                               href="./index.html">HOME</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link" href="./about.html">KDO&nbsp;JSME</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link" href="./production.html">Co&nbsp;děláme</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link page-header__nav-link-active"
+                               href="#">reference</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link" href="./reviews.html">říkají&nbsp;o&nbsp;nás</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link" href="./partners.html">partneři</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item">
+                            <a class="nav-link page-header__nav-link" href="./contacts.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item page-header__nav-item page-header__nav-item--lang">
+                            <a class="nav-link page-header__nav-link page-header__nav-link--cz page-header__nav-link-active"
+                               href="#">cz</a><span>/</span><a
+                                class="nav-link page-header__nav-link page-header__nav-link--pl" href="#">PL</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="page-main">
+    <section class="examples">
+        <h2 class="title">reference</h2>
+        <div class="filter">
+                <button type="button">Zasklívání</button>
+                <button type="button">Manipulace</button>
+                <button type="button">Přeprava nadrozměrných břemen</button>
+        </div>
+        <ul class="examples__list">
+            <li class="examples__item">
+                <input type="checkbox" id="item1" name="faq__item-question" class="visually-hidden">
+                <label for="item1" data-bs-toggle="collapse" data-bs-target="#krnov" aria-expanded="false" aria-controls="krnov" class="examples__item-title"><span>Krnov - Zasklívání</span></label>
+                <div class="examples__item-description">
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prosto-rech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.Pokládky panelů, svrchních vrstev, instalace
+                        skleněných výplní oken a zimních zahrad. Náročné a jemné zvedání v úzkých
+                        rozích, domech a jejich okolí či na staveništích.</p>
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prosto-rech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.Pokládky panelů, svrchních vrstev, instalace
+                        skleněných výplní oken a zimních zahrad. Náročné a jemné zvedání v úzkých
+                        rozích, domech a jejich okolí či na staveništích.</p>
+                </div>
+                <div class="examples__media-wrapper collapse" id="krnov">
+                    <ul class="reference__list reference__list--examples">
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link reference__item-link--video glightbox" href="https://www.youtube.com/watch?v=e3Ba_OkPjig">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="examples__item">
+                <input type="checkbox" id="item2" name="faq__item-question" class="visually-hidden">
+                <label for="item2" data-bs-toggle="collapse" data-bs-target="#ostrava" aria-expanded="false" aria-controls="ostrava" class="examples__item-title"><span>Ostrava - Manipulace</span></label>
+                <div class="examples__item-description">
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prosto-rech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.Pokládky panelů, svrchních vrstev, instalace
+                        skleněných výplní oken a zimních zahrad. Náročné a jemné zvedání v úzkých
+                        rozích, domech a jejich okolí či na staveništích.</p>
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prosto-rech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.Pokládky panelů, svrchních vrstev, instalace
+                        skleněných výplní oken a zimních zahrad. Náročné a jemné zvedání v úzkých
+                        rozích, domech a jejich okolí či na staveništích.</p>
+                </div>
+                <div class="examples__media-wrapper collapse" id="ostrava">
+                    <ul class="reference__list reference__list--examples">
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="examples__item">
+                <input type="checkbox" id="item3" name="faq__item-question" class="visually-hidden">
+                <label for="item3" data-bs-toggle="collapse" data-bs-target="#opava" aria-expanded="false" aria-controls="opava" class="examples__item-title"><span>Opava</span></label>
+                <div class="examples__item-description">
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prosto-rech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.Pokládky panelů, svrchních vrstev, instalace
+                        skleněných výplní oken a zimních zahrad. Náročné a jemné zvedání v úzkých
+                        rozích, domech a jejich okolí či na staveništích.</p>
+                </div>
+                <div class="examples__media-wrapper collapse" id="opava">
+                    <ul class="reference__list reference__list--examples">
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="examples__item">
+                <input type="checkbox" id="item4" name="faq__item-question" class="visually-hidden">
+                <label for="item4" data-bs-toggle="collapse" data-bs-target="#jeseník" aria-expanded="false" aria-controls="jeseník" class="examples__item-title"><span>Jeseník</span></label>
+                <div class="examples__item-description">
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prosto-rech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.Pokládky panelů, svrchních vrstev, instalace
+                        skleněných výplní oken a zimních zahrad. Náročné a jemné zvedání v úzkých
+                        rozích, domech a jejich okolí či na staveništích.</p>
+                    <p>Potřebujete manipulovat s velkými břemeny v malých a úzkých prosto-rech? Náš mini jeřáb je Vám k
+                        dispozici. Pomůžeme vám v široké paletě činností.Pokládky panelů, svrchních vrstev, instalace
+                        skleněných výplní oken a zimních zahrad. Náročné a jemné zvedání v úzkých
+                        rozích, domech a jejich okolí či na staveništích.</p>
+                </div>
+                <div class="examples__media-wrapper collapse" id="jeseník">
+                    <ul class="reference__list reference__list--examples">
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="examples__item">
+                <input type="checkbox" id="item5" name="faq__item-question" class="visually-hidden">
+                <label for="item5" data-bs-toggle="collapse" data-bs-target="#karviná" aria-expanded="false" aria-controls="karviná" class="examples__item-title"><span>Karviná</span></label>
+                <div class="examples__media-wrapper collapse" id="karviná">
+                    <ul class="reference__list reference__list--examples">
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="examples__item">
+                <input type="checkbox" id="item6" name="faq__item-question" class="visually-hidden">
+                <label for="item6" data-bs-toggle="collapse" data-bs-target="#holešov" aria-expanded="false" aria-controls="holešov" class="examples__item-title"><span>Holešov</span></label>
+                <div class="examples__media-wrapper collapse" id="holešov">
+                    <ul class="reference__list reference__list--examples">
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="examples__item">
+                <input type="checkbox" id="item7" name="faq__item-question" class="visually-hidden">
+                <label for="item7" data-bs-toggle="collapse" data-bs-target="#opole" aria-expanded="false" aria-controls="opole" class="examples__item-title"><span>Opole</span></label>
+                <div class="examples__media-wrapper collapse" id="opole">
+                    <ul class="reference__list reference__list--examples">
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-1@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-1@1x.webp 1x, img/production-preview-1@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-1@1x.jpg"
+                                         srcset="img/production-preview-1@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-2@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-2@1x.webp 1x, img/production-preview-2@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-2@1x.jpg"
+                                         srcset="img/production-preview-2@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="reference__item">
+                            <a class="reference__item-link glightbox" href="img/production-preview-3@1x.jpg">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="img/production-preview-3@1x.webp 1x, img/production-preview-3@2x.webp 2x">
+                                    <img loading="lazy" src="img/production-preview-3@1x.jpg"
+                                         srcset="img/production-preview-3@2x.jpg 2x"
+                                         alt="reference-pic">
+                                </picture>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="link">
+        <p>Oslovily vás naše reference?</p>
+        <a class="btn button__yellow" href="./contacts.html" role="button">KONTAKTUJTE NÁS</a>
+    </section>
+</main>
+
+<footer class="page-footer container-fluid">
+    <div class="page-footer__wrapper">
+        <ul class="page-footer__list row">
+            <li class="col-sm-6 col-xl-2 col-xxl-2 page-footer__item page-footer__item--network">
+                <strong>Sledujte nás</strong>
+                <a href="">
+                    <svg class="page-footer__network-logo">
+                        <use xlink:href="#youtube-icon"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="col-sm-6 col-xl-4 col-xxl-4 page-footer__item page-footer__item--address">
+                <strong>Office</strong>
+                <p>17. listopadu 908/12</p>
+                <p>Opava 746 01</p>
+                <a href="#">Najít na mapě</a>
+            </li>
+            <li class="col-sm-6 col-xl-4 col-xxl-4 page-footer__item page-footer__item--contacts">
+                <strong>Kontakt</strong>
+                <a href="tel:+420774665693">+420 774 665 693</a>
+                <a href="mailto:info@kuprminijeraby.cz">info@kuprminijeraby.cz</a>
+            </li>
+            <li class="col-sm-6 col-xl-2 col-xxl-2 page-footer__item page-footer__item--copyright">
+                <strong>©2021&nbsp;Copyright</strong>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/glightbox.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

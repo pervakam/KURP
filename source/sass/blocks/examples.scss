@@ -1,0 +1,83 @@
+.examples {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 92rem;
+  margin: 5rem auto;
+  padding: 0 3rem;
+  text-align: left;
+
+  h2 {
+    padding: 0;
+    margin: 0 0 2.4rem;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 6.2rem 0;
+    padding: 0;
+  }
+
+  &__item {
+    border-bottom: 1px solid $light-gray;
+    padding: 3.125rem 0;
+
+    input:checked + .examples__item-title::after {
+      background-image: url("../img/arrow-small-down.svg");
+    }
+  }
+
+  &__item-title {
+    margin: 0;
+    font-family: $Vafle;
+    font-size: 1.5rem;
+    line-height: 120%;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/arrow-small-right.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      margin: 0 0 0 1.4rem;
+    }
+  }
+
+  &__item-description {
+    margin: 1.7rem 0 0;
+
+    p {
+      margin: 0 0 1.5rem;
+      font-size: 1.187rem;
+      line-height: 137%;
+      padding: 0 2% 0 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .examples {
+    padding: 3rem 2rem;
+    margin: 0;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+
+}
+
+@include media-breakpoint-down(lg) {
+
+}
+
+@include media-breakpoint-down(sm) {
+  .examples {
+    padding: 3rem 1rem;
+  }
+}

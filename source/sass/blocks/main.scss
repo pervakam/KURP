@@ -2,4 +2,9 @@
   width: 100%;
   margin: 0 auto;
   flex: 1 0 auto;
+
+  &--contact {
+    background-color: $background-light-gray;
+    position: relative;
+  }
 }

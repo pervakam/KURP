@@ -1,6 +1,10 @@
 .page-header {
   padding: 0;
 
+  &--contact {
+    background-color: $background-light-gray;
+  }
+
   &__logo {
     width: 11rem;
     height: 1.56rem;

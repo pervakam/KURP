@@ -16,9 +16,23 @@
     }
 
     &--services {
-      position: absolute;
-      right: -4.1vw;
-      bottom: 3.8rem;
+      min-width: max-content;
+      margin: 3rem 0 0;
+
+      span,
+      svg {
+        display: block;
+      }
+
+      svg {
+        margin: 0 auto 1.8rem;
+      }
+
+      &:hover {
+        svg {
+          opacity: 1;
+        }
+      }
     }
   }
 
@@ -53,6 +67,15 @@
     &__about {
       margin: 3rem 0 0;
       text-align: center;
+
+      &--services {
+        min-width: max-content;
+        margin: 3rem 0 0;
+
+        svg {
+          display: none;
+        }
+      }
     }
 
     &__yellow {

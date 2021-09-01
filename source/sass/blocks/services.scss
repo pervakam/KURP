@@ -1,12 +1,12 @@
 .services {
-  box-sizing: content-box;
+  box-sizing: border-box;
   width: 100%;
-  max-width: 86rem;
+  max-width: 102rem;
   margin: 5rem auto;
-  padding: 0 3rem;
+  padding: 0 3rem 0 8rem;
   text-align: left;
 
-  h2 {
+  h1 {
     padding: 0;
     margin: 0 0 2.4rem;
   }
@@ -30,12 +30,18 @@
     position: relative;
   }
 
+  &__item-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__item-title {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
-    p {
+    h2 {
       width: fit-content;
       margin: 0;
       font-family: $Vafle;
@@ -51,7 +57,7 @@
   }
 
   &__item-description {
-    margin: 1.7rem 0 0;
+    margin: 1.7rem 0 4.5rem;
 
     p {
       margin: 0;
@@ -83,6 +89,11 @@
       margin: 0 0 6rem;
       position: relative;
     }
+
+    &__item-data {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 }
 
@@ -104,6 +115,11 @@
 
 @include media-breakpoint-down(sm) {
   .services {
+    margin: 2rem auto;
     padding: 0 1rem;
+
+    &__item-img {
+      margin: 0 1.5rem 0 0;
+    }
   }
 }

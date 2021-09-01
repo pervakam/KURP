@@ -1,0 +1,41 @@
+.filter {
+  text-align: left;
+
+  button {
+    width: fit-content;
+    background-color: $black-text;
+    color: $yellow;
+    border: none;
+    border-radius: 3rem;
+    padding: 0.5rem 1.25rem;
+    font-family: $Vafle;
+    font-size: 1.125rem;
+    line-height: 122%;
+    margin: 1rem 1rem 0 0;
+
+    &:hover {
+      background-color: $yellow;
+      color: $black-text;
+    }
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+
+}
+
+@include media-breakpoint-down(xl) {
+
+}
+
+@include media-breakpoint-down(lg) {
+
+}
+
+@include media-breakpoint-down(md) {
+
+}
+
+@include media-breakpoint-down(sm) {
+
+}

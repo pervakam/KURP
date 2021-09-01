@@ -5,6 +5,8 @@
 @import "../../node_modules/bootstrap/scss/_navbar.scss";
 @import "../../node_modules/bootstrap/scss/_buttons.scss";
 @import "../../node_modules/bootstrap/scss/_transitions.scss";
+@import "../../node_modules/bootstrap/scss/_forms.scss";
+@import "glightbox.scss";
 @import "normalize.scss";
 @import "variables.scss";
 @import "global.scss";
@@ -30,3 +32,6 @@
 @import "blocks/comments.scss";
 @import "blocks/partners.scss";
 @import "blocks/contact.scss";
+@import "blocks/modal.scss";
+@import "blocks/filters.scss";
+@import "blocks/examples.scss";

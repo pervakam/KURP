@@ -4,25 +4,14 @@ const reviewsList = document.querySelector('.reviews__list');
 const referenceListNextButton = document.querySelector('.reference__list-next');
 const referenceListPrevButton = document.querySelector('.reference__list-prev');
 
-if (referenceList) {
+if (document.querySelector('.reference')) {
     const referenceSwiper = new Swiper('.reference__swiper-container--main', {
         on: {
             slideNextTransitionStart: function () {
                 referenceListPrevButton.classList.remove('reference__list-prev--hide');
             },
-            reachEnd: function () {
-                referenceListNextButton.classList.add('reference__list-next--hide');
-            },
-            slidePrevTransitionStart: function () {
-                referenceListNextButton.classList.remove('reference__list-next--hide');
-            },
-            reachBeginning: function () {
-                referenceListPrevButton.classList.add('reference__list-prev--hide');
-            },
 
         },
-
-        spaceBetween: 16,
 
         slidesPerView: 'auto',
 
@@ -35,57 +24,6 @@ if (referenceList) {
         navigation: {
             nextEl: '.reference__list-next--main',
             prevEl: '.reference__list-prev--main',
-        },
-    });
-
-    const cargoSwiper = new Swiper('.reference__swiper-container--cargo', {
-        spaceBetween: 16,
-
-        slidesPerView: 'auto',
-
-        loop: true,
-
-        wrapperClass: 'reference__list',
-
-        slideClass: 'reference__item',
-
-        navigation: {
-            nextEl: '.reference__list-next--cargo',
-            prevEl: '.reference__list-prev--cargo',
-        },
-    });
-
-    const glassSwiper = new Swiper('.reference__swiper-container--glass', {
-        spaceBetween: 16,
-
-        slidesPerView: 'auto',
-
-        loop: true,
-
-        wrapperClass: 'reference__list',
-
-        slideClass: 'reference__item',
-
-        navigation: {
-            nextEl: '.reference__list-next--glass',
-            prevEl: '.reference__list-prev--glass',
-        },
-    });
-
-    const manipulationSwiper = new Swiper('.reference__swiper-container--manipulation', {
-        spaceBetween: 16,
-
-        slidesPerView: 'auto',
-
-        loop: true,
-
-        wrapperClass: 'reference__list',
-
-        slideClass: 'reference__item',
-
-        navigation: {
-            nextEl: '.reference__list-next--manipulation',
-            prevEl: '.reference__list-prev--manipulation',
         },
     });
 }
@@ -115,5 +53,37 @@ if (window.innerWidth >= 1200) {
             relativeInput: true
         });
     })
-
 }
+
+const forms = document.querySelectorAll('.needs-validation')
+
+Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+        }, false)
+    })
+
+const modalOverlays = document.querySelectorAll('.modal__overlay');
+
+modalOverlays.forEach((it) => {
+    const modalCloseButton = it.querySelector('.modal__close');
+
+    modalCloseButton.addEventListener('click', () => {
+        it.classList.add('modal__overlay--hide')
+    })
+})
+
+if (document.querySelector('.examples')) {
+    const lightbox = GLightbox({
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true
+    });
+}
+
