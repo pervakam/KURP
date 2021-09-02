@@ -6,7 +6,7 @@
   padding: 0 3rem;
   text-align: left;
 
-  h2 {
+  h1 {
     padding: 0;
     margin: 0 0 2.4rem;
   }
@@ -19,7 +19,6 @@
 
   &__item {
     border-bottom: 1px solid $light-gray;
-    padding: 3.125rem 0;
 
     input:checked + .examples__item-title::after {
       background-image: url("../img/arrow-small-down.svg");
@@ -28,6 +27,7 @@
 
   &__item-title {
     margin: 0;
+    padding: 3.125rem 0;
     font-family: $Vafle;
     font-size: 1.5rem;
     line-height: 120%;
@@ -50,8 +50,6 @@
   }
 
   &__item-description {
-    margin: 1.7rem 0 0;
-
     p {
       margin: 0 0 1.5rem;
       font-size: 1.187rem;
@@ -72,12 +70,24 @@
 
 }
 
-@include media-breakpoint-down(lg) {
-
+@include media-breakpoint-down(md) {
+  .examples {
+    &__list {
+      margin: 3rem 0;
+    }
+  }
 }
 
 @include media-breakpoint-down(sm) {
   .examples {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
+
+    &__list {
+      margin: 1rem 0;
+    }
+
+    &__item-title {
+      padding: 2rem 0;
+    }
   }
 }

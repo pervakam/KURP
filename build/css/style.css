@@ -10719,9 +10719,11 @@ body {
 
 @media (max-width: 575.98px) {
   .page-main__banner {
-    padding: 1rem 1rem 3rem; }
-  .page-main__banner-about a {
-    width: 100%; } }
+    padding: 2rem 1rem; }
+  .page-main__banner-about {
+    padding: 0; }
+    .page-main__banner-about a {
+      width: 100%; } }
 
 .scroll {
   width: 2.63rem;
@@ -10848,7 +10850,6 @@ body {
             justify-content: flex-start;
     position: relative; }
     .reference__list--examples {
-      margin: 1.5rem 0 0;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       width: calc(100% + 1rem); }
@@ -11072,10 +11073,12 @@ body {
       padding-left: 0; }
     .reviews__slider {
       padding-left: 0; }
-    .reviews__list--comments .reviews__item {
-      padding: 3rem 0 2rem; }
-    .reviews__list--comments .reviews__author-photo {
-      margin: 0 auto 2rem; }
+    .reviews__list--comments {
+      margin: 0; }
+      .reviews__list--comments .reviews__item {
+        padding: 3rem 0 2rem; }
+      .reviews__list--comments .reviews__author-photo {
+        margin: 0 auto 2rem; }
     .reviews__item {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -11436,7 +11439,8 @@ body {
   .services {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 0 2rem; } }
+    padding: 3rem 2rem;
+    margin: 0; } }
 
 @media (max-width: 1199.98px) {
   .services__list {
@@ -11461,8 +11465,8 @@ body {
 
 @media (max-width: 575.98px) {
   .services {
-    margin: 2rem auto;
-    padding: 0 1rem; }
+    margin: 0 auto;
+    padding: 2rem 1rem; }
     .services__item-img {
       margin: 0 1.5rem 0 0; } }
 
@@ -11558,7 +11562,7 @@ body {
   margin: 5rem auto;
   padding: 0 3rem;
   text-align: left; }
-  .comments h2 {
+  .comments h1 {
     padding: 0;
     margin: 0 0 2.4rem; }
 
@@ -11571,7 +11575,7 @@ body {
 
 @media (max-width: 575.98px) {
   .comments {
-    padding: 3rem 1rem; } }
+    padding: 2rem 1rem; } }
 
 .partners {
   -webkit-box-sizing: content-box;
@@ -11581,7 +11585,7 @@ body {
   margin: 5rem auto;
   padding: 0 3rem;
   text-align: left; }
-  .partners h2 {
+  .partners h1 {
     padding: 0;
     margin: 0 0 2.4rem; }
   .partners__list {
@@ -11632,7 +11636,9 @@ body {
 
 @media (max-width: 575.98px) {
   .partners {
-    padding: 3rem 1rem; }
+    padding: 2rem 1rem; }
+    .partners__list {
+      margin: 3rem 0 0; }
     .partners__item {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -11651,7 +11657,7 @@ body {
   margin: 5rem auto 0;
   padding: 0 3rem;
   text-align: left; }
-  .contact h2 {
+  .contact h1 {
     padding: 0;
     margin: 5rem 0 1.5rem; }
   .contact__about-description {
@@ -11728,20 +11734,28 @@ body {
   .contact__map-img {
     width: 100%;
     height: 100%; }
+    .contact__map-img svg {
+      width: 100%;
+      height: auto; }
+
+@media (max-width: 1399.98px) {
+  .contact {
+    padding: 3rem 2rem;
+    margin: 0; }
+    .contact h1 {
+      margin: 0 0 1.5rem; } }
 
 @media (max-width: 1199.98px) {
-  .contact {
-    padding: 0 2rem; }
-    .contact__form-wrapper {
-      width: 100%; }
-    .contact__address-wrapper {
-      margin: 0 1rem 0 0; }
-    .contact__form {
-      width: 80%; } }
+  .contact__form-wrapper {
+    width: 100%; }
+  .contact__address-wrapper {
+    margin: 0 1rem 0 0; }
+  .contact__form {
+    width: 80%; }
+  .contact__map {
+    margin: 0; } }
 
 @media (max-width: 991.98px) {
-  .contact h2 {
-    margin: 2rem 0 1.5rem; }
   .contact__about-description {
     width: 100%; }
   .contact__form-wrapper {
@@ -11757,24 +11771,38 @@ body {
     width: 100%;
     margin: 2rem 0 0; }
   .contact__map {
-    display: none; } }
+    width: 100%;
+    margin: 5% 0 0 0; } }
 
 @media (max-width: 575.98px) {
-  .contact__form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .contact__form-data {
-    width: 100%; }
-  .contact__form-text {
-    width: 100%;
-    margin: 1.875rem 0 0; }
-    .contact__form-text .form-control {
-      height: 10rem; }
-  .contact__form-button {
-    margin: 3rem 0;
-    width: 100%; } }
+  .contact {
+    margin: 0 auto;
+    padding: 2rem 1rem; }
+    .contact h1 {
+      margin: 0 0 1.5rem; }
+    .contact__about-description {
+      margin: 3rem 0 0; }
+    .contact__form-wrapper {
+      margin: 3rem 0 0;
+      width: 100%; }
+    .contact__form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .contact__form-data {
+      width: 100%; }
+    .contact__form-text {
+      width: 100%;
+      margin: 1.875rem 0 0; }
+      .contact__form-text .form-control {
+        height: 10rem; }
+    .contact__form-button {
+      margin: 3rem 0 0;
+      width: 100%; }
+    .contact__map {
+      height: 25rem;
+      margin: 0; } }
 
 .modal__overlay {
   position: fixed;
@@ -11864,7 +11892,7 @@ body {
   margin: 5rem auto;
   padding: 0 3rem;
   text-align: left; }
-  .examples h2 {
+  .examples h1 {
     padding: 0;
     margin: 0 0 2.4rem; }
   .examples__list {
@@ -11872,12 +11900,12 @@ body {
     margin: 6.2rem 0;
     padding: 0; }
   .examples__item {
-    border-bottom: 1px solid #e2e2e2;
-    padding: 3.125rem 0; }
+    border-bottom: 1px solid #e2e2e2; }
     .examples__item input:checked + .examples__item-title::after {
       background-image: url("../img/arrow-small-down.svg"); }
   .examples__item-title {
     margin: 0;
+    padding: 3.125rem 0;
     font-family: "Vafle", "Arial", sans-serif;
     font-size: 1.5rem;
     line-height: 120%;
@@ -11901,21 +11929,27 @@ body {
       background-size: contain;
       background-position: center;
       margin: 0 0 0 1.4rem; }
-  .examples__item-description {
-    margin: 1.7rem 0 0; }
-    .examples__item-description p {
-      margin: 0 0 1.5rem;
-      font-size: 1.187rem;
-      line-height: 137%;
-      padding: 0 2% 0 0; }
+  .examples__item-description p {
+    margin: 0 0 1.5rem;
+    font-size: 1.187rem;
+    line-height: 137%;
+    padding: 0 2% 0 0; }
 
 @media (max-width: 1399.98px) {
   .examples {
     padding: 3rem 2rem;
     margin: 0; } }
 
+@media (max-width: 767.98px) {
+  .examples__list {
+    margin: 3rem 0; } }
+
 @media (max-width: 575.98px) {
   .examples {
-    padding: 3rem 1rem; } }
+    padding: 2rem 1rem; }
+    .examples__list {
+      margin: 1rem 0; }
+    .examples__item-title {
+      padding: 2rem 0; } }
 
 /*# sourceMappingURL=style.css.map */

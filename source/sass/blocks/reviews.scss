@@ -168,6 +168,8 @@
 
     &__list {
       &--comments {
+        margin: 0;
+
         .reviews__item {
           padding: 3rem 0 2rem;
         }

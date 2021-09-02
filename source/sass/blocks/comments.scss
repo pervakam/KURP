@@ -6,7 +6,7 @@
   padding: 0 3rem;
   text-align: left;
 
-  h2 {
+  h1 {
     padding: 0;
     margin: 0 0 2.4rem;
   }
@@ -30,6 +30,6 @@
 
 @include media-breakpoint-down(sm) {
   .comments {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
   }
 }
